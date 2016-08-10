@@ -3,8 +3,8 @@ Redmine::Plugin.register :autoraisetickets do
   author 'Sean.Peng'
   description 'This is a plugin for Redmine'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'https://github.com/PengMeizhou/RedminePlugin-Autoraisetickets'
+  author_url 'https://github.com/PengMeizhou/RedminePlugin-Autoraisetickets'
   
   project_module :autoraisetickets do
     permission :view_autoraisetickets, :autoraisetickets => :index
