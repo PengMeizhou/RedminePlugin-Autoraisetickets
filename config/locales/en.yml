@@ -1,0 +1,14 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  label_tracker_id: Tracker ID
+  label_relation: Relation
+  label_subject_before: Subject(Before)
+  label_subject_after: subject(After)
+  label_status_before: Status(Before)
+  label_status_after: Status(After)
+  label_relation_tracker_id: Relation Tracker ID
+  label_some_commnets: Comment
+  
+  
+  

@@ -1,0 +1,14 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  label_tracker_id: トラックID
+  label_relation: 関係
+  label_subject_before: 課題概要(変更前)
+  label_subject_after: 課題概要(変更後)
+  label_status_before: 課題状態(変更前)
+  label_status_after: 課題状態(変更後)
+  label_relation_tracker_id: 関連トラックID
+  label_some_commnets: 備考
+  
+  
+  

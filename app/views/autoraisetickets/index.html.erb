@@ -1,0 +1,30 @@
+<%- content_for :header_tags do %>  
+  <%= stylesheet_link_tag "autoraisetickets.css", :plugin => "autoraisetickets" %>
+<%- end %>
+
+<div class="CSSTableGenerator">
+  <table>
+    <tr>      
+      <td><%= l(:label_tracker_id) %></td>
+      <td><%= l(:label_relation) %></td>
+      <td><%= l(:label_subject_before) %></td>
+      <td><%= l(:label_subject_after) %></td>
+      <td><%= l(:label_status_before) %></td>
+      <td><%= l(:label_status_after) %></td>
+      <td><%= l(:label_relation_tracker_id) %></td>
+      <td><%= l(:label_some_commnets) %></td>
+    </tr>
+    <% Autoraiseticket.all.each do |newticket| %>
+      <tr>        
+        <td><%= newticket.tracker_id %></td> 
+        <td><%= newticket.relation %></td>
+        <td><%= newticket.subject_before %></td>       
+        <td><%= newticket.subject_after %></td>
+        <td><%= newticket.status_before %></td>
+        <td><%= newticket.status_after %></td>
+        <td><%= newticket.relation_tracker_id %></td>        
+        <td><%= newticket.some_commnets %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
