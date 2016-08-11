@@ -35,10 +35,12 @@ module Autoraiseticketissuepatch
       def get_old_info
         logger.info '*********get_old_info start***************'
         oldissue = Issue.find_by_id(self.id.to_i) 
-        @tracker_id = oldissue.tracker_id 
-        @subject_before =  oldissue.subject
-        @status_before = oldissue.status.id
-        @relation_tracker_id = oldissue.tracker_id        
+        if !oldissue.nil?
+          @tracker_id = oldissue.tracker_id 
+          @subject_before =  oldissue.subject
+          @status_before = oldissue.status.id
+          @relation_tracker_id = oldissue.tracker_id   
+        end     
         logger.info '*********get_old_info end*****************'
       end  
       
